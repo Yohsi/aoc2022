@@ -3,11 +3,6 @@ use colored::*;
 
 const DAY: u32 = 4;
 
-struct Range {
-    min: u64,
-    max: u64,
-}
-
 fn main() {
     let sample = fs::read_to_string(format!("samples/day{:02}", DAY)).unwrap_or_default();
     let input = fs::read_to_string(format!("inputs/day{:02}", DAY)).unwrap_or_default();
